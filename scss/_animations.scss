@@ -1,0 +1,47 @@
+@keyframes aparicion{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes palpitar{
+    0%{
+        transform: scale(.8,.7);
+    }
+
+    50%{
+        transform: scale(.9,.8);
+    }
+
+    100%{
+        transform: scale(1,.9);
+    }
+}
+
+@keyframes entrar{
+    0%{
+        transform: translateX(-200px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes bajar{
+    0%{
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+
+}

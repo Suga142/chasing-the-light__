@@ -1,0 +1,31 @@
+//colores de la página
+$color1: rgb(155, 206, 222);
+$color2: rgb(16, 47, 56);
+$color3: rgb(73, 239, 220);
+
+// variable de tamaño general
+$size: 3px;
+
+// map del form-1
+$fav-colors: (
+    rojo: red,
+    azul: blue,
+    amarillo: yellow,
+    verde: green,
+    morado: purple,
+    naranja: orange,
+    celeste: aqua
+);
+
+@each $fav, $color in $fav-colors {
+    .color-#{$fav}{
+        color: $color;
+    }
+}
+
+// mixin para uso general
+
+@mixin size ($alto,$ancho) {
+    height: $alto;
+    width: $ancho;
+}

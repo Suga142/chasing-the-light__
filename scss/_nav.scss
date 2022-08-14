@@ -1,0 +1,29 @@
+.navbar{
+    background-color: $color2 !important;
+    border: $color1 $size solid ;
+
+    h1{
+        color: $color1;
+        font-size: $size*13;
+        text-align: center;
+    
+        animation-name: entrar;
+        animation-duration: .5s;
+        animation-timing-function: ease;
+        animation-iteration-count: 1;
+    }
+
+    a{
+        color: $color1 !important;
+        padding-right: 1vw !important ;
+        font-size: $size*7;
+        transition-delay: .1s;
+        transition-timing-function: ease;
+    }
+
+    .nav-link:hover{
+        color: $color1 !important;
+    }
+}
+
+

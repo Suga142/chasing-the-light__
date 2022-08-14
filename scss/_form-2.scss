@@ -1,0 +1,37 @@
+h3{
+    color: $color1;
+}
+
+.form-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $size*16;
+    margin-top: $size*13;
+    color: $color3;
+    
+        
+    label{
+        background-color: $color2;
+        border: $color1 2px solid;
+        padding: $size*2;
+    }
+        
+    input{
+        width: 300px;
+        background-color: $color2;
+    }
+        
+    textarea{
+        resize: none;
+        font-size: $size*6;
+        background-color: $color2;
+        height: 30vh;
+    }
+
+}
+
+
+
+

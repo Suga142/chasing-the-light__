@@ -1,0 +1,398 @@
+.color-rojo {
+  color: red; }
+
+.color-azul {
+  color: blue; }
+
+.color-amarillo {
+  color: yellow; }
+
+.color-verde {
+  color: green; }
+
+.color-morado {
+  color: purple; }
+
+.color-naranja {
+  color: orange; }
+
+.color-celeste {
+  color: aqua; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/gif5.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif; }
+
+.navbar {
+  background-color: #102f38 !important;
+  border: #9bcede 3px solid; }
+  .navbar h1 {
+    color: #9bcede;
+    font-size: 39px;
+    text-align: center;
+    animation-name: entrar;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1; }
+  .navbar a {
+    color: #9bcede !important;
+    padding-right: 1vw !important;
+    font-size: 21px;
+    transition-delay: .1s;
+    transition-timing-function: ease; }
+  .navbar .nav-link:hover {
+    color: #9bcede !important; }
+
+main {
+  text-align: center; }
+  main .centro {
+    animation-name: aparicion;
+    animation-duration: 1s;
+    animation-timing-function: ease; }
+    main .centro .logo {
+      width: 35vw;
+      height: 17vh;
+      margin-top: 9px;
+      margin-bottom: 21px;
+      animation-name: palpitar;
+      animation-duration: 1.7s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite; }
+    main .centro .img1 {
+      width: 50vw;
+      height: 55vh;
+      display: none;
+      margin-bottom: 30px;
+      padding-right: 36px; }
+    main .centro ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly; }
+    main .centro li {
+      display: list-item;
+      margin-bottom: 12px; }
+    main .centro .ptr {
+      height: 35px;
+      width: 35px;
+      margin-top: 7px; }
+    main .centro .ptr:hover {
+      height: 60px;
+      width: 60px; }
+    main .centro .instw {
+      height: 42px;
+      width: 42px; }
+    main .centro .instw:hover {
+      height: 70px;
+      width: 70px; }
+    main .centro .disc {
+      height: 40px;
+      width: 40px;
+      margin-top: 5px; }
+    main .centro .disc:hover {
+      height: 72px;
+      width: 72px; }
+    @media screen and (min-width: 650px) {
+      main .centro .centro {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 120px; }
+      main .centro .centro ul {
+        display: flex;
+        flex-direction: column; }
+      main .centro .logo {
+        width: 8vw;
+        height: 10vh; }
+      main .centro .img1 {
+        display: inline-block; } }
+  main p {
+    font-size: 18px;
+    color: #9bcede;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px; }
+
+.formulario1 {
+  text-align: center;
+  margin-top: 30px; }
+  .formulario1 label {
+    font-size: 18px;
+    color: #9bcede; }
+  .formulario1 input {
+    font-size: 18px;
+    color: #9bcede;
+    background-color: #102f38;
+    margin-bottom: 21px;
+    margin-top: 21px; }
+  .formulario1 select {
+    height: 30px;
+    width: 200px;
+    font-size: 18px;
+    color: #9bcede;
+    background-color: #102f38;
+    margin-bottom: 21px;
+    margin-top: 21px; }
+  .formulario1 .enviar {
+    height: 40px;
+    width: 150px;
+    font-size: 21px;
+    margin-top: 21px; }
+
+.center-text {
+  text-align: center; }
+  .center-text h3 {
+    color: #9bcede;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 2px;
+    margin-right: 2px; }
+  .center-text a {
+    font-size: 30px;
+    background-color: #9bcede;
+    border: #102f38 3px solid;
+    text-decoration: none;
+    display: inline-block;
+    color: #102f38;
+    margin-bottom: 21px; }
+
+h2 {
+  color: #9bcede;
+  margin: 36px; }
+
+.conse-grid {
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 60px; }
+  .conse-grid .card {
+    width: 18rem;
+    background-color: #102f38;
+    border: #9bcede 3px solid;
+    animation-name: bajar;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1; }
+    .conse-grid .card img {
+      height: 30vh; }
+    .conse-grid .card h5 {
+      color: #49efdc; }
+    .conse-grid .card p {
+      color: #49efdc; }
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 15px;
+  text-align: center;
+  color: #9bcede;
+  margin-top: 21px; }
+  footer h5 {
+    margin-bottom: 70px;
+    background-color: #102f38;
+    display: inline-block;
+    border: #9bcede 2px solid;
+    padding: 3px 2; }
+
+.noticias {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 95%;
+  justify-content: center;
+  animation-name: aparicion;
+  animation-duration: 1s;
+  animation-timing-function: ease; }
+  .noticias .noticia, .noticias .evento {
+    text-align: center;
+    color: #9bcede;
+    list-style-type: none;
+    background-color: #102f38;
+    border: #9bcede 3px solid; }
+  .noticias h2 {
+    font-size: 21px;
+    padding: 6px; }
+  .noticias p {
+    font-size: 18px;
+    margin-top: 15px; }
+  .noticias ul {
+    list-style-type: none;
+    height: 265px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px; }
+  .noticias li {
+    padding-bottom: 30px;
+    font-size: 18px; }
+  .noticias .enlace2 {
+    color: #9bcede; }
+  .noticias .enlace2:hover {
+    color: #49efdc; }
+  .noticias .evento p {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 39px; }
+
+h3 {
+  color: #9bcede; }
+
+.form-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+  margin-top: 39px;
+  color: #49efdc; }
+  .form-2 label {
+    background-color: #102f38;
+    border: #9bcede 2px solid;
+    padding: 6px; }
+  .form-2 input {
+    width: 300px;
+    background-color: #102f38; }
+  .form-2 textarea {
+    resize: none;
+    font-size: 18px;
+    background-color: #102f38;
+    height: 30vh; }
+
+.centrar-titulo {
+  display: flex;
+  justify-content: center;
+  color: #9bcede; }
+
+.cuadro-color {
+  color: #9bcede;
+  text-align: center;
+  background-color: #102f38;
+  border: #9bcede 3px solid;
+  display: inline-block;
+  font-size: 21px;
+  margin-top: 24px; }
+
+.texta2 {
+  resize: none;
+  font-size: 18px;
+  background-color: #102f38;
+  color: #9bcede; }
+
+.enviar2 {
+  text-align: center;
+  margin-bottom: 24px; }
+
+.comentario {
+  color: #9bcede;
+  background-color: #102f38;
+  border: #9bcede 3px solid;
+  margin-top: 51px;
+  margin-left: 6px;
+  margin-right: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 250px; }
+
+.info {
+  animation-name: aparicion;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  margin: 60px; }
+  .info .accordion-item {
+    background-color: #102f38;
+    border: #9bcede 3px solid !important; }
+  .info .accordion-button {
+    background-color: #102f38;
+    color: #9bcede;
+    font-size: 21px; }
+  .info .accordion-body {
+    color: #9bcede; }
+
+@keyframes aparicion {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes palpitar {
+  0% {
+    transform: scale(0.8, 0.7); }
+  50% {
+    transform: scale(0.9, 0.8); }
+  100% {
+    transform: scale(1, 0.9); } }
+
+@keyframes entrar {
+  0% {
+    transform: translateX(-200px); }
+  100% {
+    transform: translateX(0px); } }
+
+@keyframes bajar {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0px);
+    opacity: 1; } }
+
+@media screen and (min-width: 650px) {
+  .centro {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 120px; }
+  .centro ul {
+    display: flex;
+    flex-direction: column; }
+  .logo {
+    width: 8vw;
+    height: 10vh; }
+  .img1 {
+    display: inline-block; }
+  h5 {
+    font-size: 18px; }
+  .form-2 textarea {
+    width: 80vw; } }
+
+@media screen and (min-width: 875px) {
+  header {
+    position: sticky;
+    top: 10px;
+    z-index: 100; }
+  .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas: "not-1 not-2" "not-3 not-4";
+    padding: 15px;
+    column-gap: 15px;
+    row-gap: 39px; }
+  .not-1 {
+    grid-area: not-1; }
+  .not-2 {
+    grid-area: not-2; }
+  .not-3 {
+    grid-area: not-3; }
+  .not-4 {
+    grid-area: not-4; } }
+
+@media screen and (min-width: 1245px) {
+  .info p {
+    height: 20vh; }
+  .inf-3 p {
+    height: 30vh; }
+  .inf-4 p {
+    height: 30vh; } }

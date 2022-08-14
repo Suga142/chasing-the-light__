@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: $size*5;
+    text-align: center;
+    color: $color1;
+    margin-top: $size*7;
+
+    h5{
+        margin-bottom: 70px;
+        background-color: $color2;
+        display: inline-block;
+        border: $color1 2px solid;
+        padding: $size 2;
+    }
+}
+

@@ -1,0 +1,106 @@
+main{
+    text-align: center;
+
+    .centro{
+        animation-name: aparicion;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+
+        .logo{
+            width: 35vw;
+            height: 17vh;
+            margin-top: $size*3;
+            margin-bottom: $size*7;
+        
+            animation-name: palpitar;
+            animation-duration: 1.7s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        
+        .img1{
+            width: 50vw;
+            height: 55vh;
+            display: none;
+            margin-bottom: $size*10;
+            padding-right: $size*12;
+        }
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+        
+        }
+        li{
+            display: list-item;
+             
+            margin-bottom: $size*4;
+        }
+        
+        .ptr{
+            @include size(35px, 35px);
+            margin-top: 7px;
+        }
+        
+        .ptr:hover{
+            @include size(60px, 60px)
+        }
+        
+        
+        .instw{
+            @include size(42px, 42px)
+        }
+        
+        .instw:hover{
+            @include size(70px, 70px)
+        }
+        
+        .disc{
+            @include size(40px, 40px);
+            margin-top: 5px;
+        }
+        
+        .disc:hover{
+            @include size(72px, 72px)
+        }
+
+        @media screen and (min-width: 650px){
+    
+            .centro{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                margin-top: 120px;
+        
+                
+            }
+        
+            .centro ul{
+                display: flex;
+                flex-direction: column;
+            }
+        
+            .logo{
+                width: 8vw;
+                height: 10vh;
+            }
+        
+            .img1{
+                display: inline-block;
+            }
+        }
+    }
+    
+    p{
+        font-size: $size*6;
+        color: $color1;
+        text-align: center;
+        margin-left: $size*5;
+        margin-right: $size*5;
+        
+    }
+
+    
+}    
+    
