@@ -7,8 +7,7 @@ main{
         animation-timing-function: ease;
 
         .logo{
-            width: 35vw;
-            height: 17vh;
+            @include size(17vh, 35vw);
             margin-top: $size*3;
             margin-bottom: $size*7;
         
@@ -19,6 +18,7 @@ main{
         }
         
         .img1{
+            @include size(55vh, 50vw);
             width: 50vw;
             height: 55vh;
             display: none;
@@ -82,8 +82,7 @@ main{
             }
         
             .logo{
-                width: 8vw;
-                height: 10vh;
+                @include size(10vh, 8vw);
             }
         
             .img1{

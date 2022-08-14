@@ -58,8 +58,8 @@
         @extend .noticia;
         
         p{
-            padding-top: $size*10;
-            padding-bottom: $size*10;
+            @include padding($size*10, $size*10);
+        
         }
         
     }

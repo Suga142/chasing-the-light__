@@ -7,8 +7,7 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: $size*16;
-    margin-top: $size*13;
+    @include margin($size*13, $size*16);
     color: $color3;
     
         

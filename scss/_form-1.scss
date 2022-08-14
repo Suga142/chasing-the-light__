@@ -18,12 +18,12 @@
     }
     
     select{
-        @include size(30px, 200px);
+        @include size($size*10, 200px);
         font-size: $size*6;
         color: $color1;
         background-color: $color2;
-        margin-bottom: $size*7;
-        margin-top: $size*7;
+        
+        @include margin($size*7, $size*7)
     }
     
     
@@ -40,8 +40,7 @@
     h3{
         color: $color1;
         font-size: $size*6;
-        margin-top: $size*10;
-        margin-bottom: $size*10;
+        @include margin($size*10, $size*10);
         margin-left: 2px;
         margin-right: 2px;
         

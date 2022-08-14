@@ -1,5 +1,6 @@
 @media screen and (min-width: 650px){
 
+    
     .centro{
         display: flex;
         flex-direction: row-reverse;
@@ -15,8 +16,7 @@
     }
 
     .logo{
-        width: 8vw;
-        height: 10vh;
+        @include size(10vh, 8vw);
     }
 
     .img1{
