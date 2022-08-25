@@ -89,6 +89,14 @@ main{
                 display: inline-block;
             }
         }
+
+        
+    }
+
+    .desc{
+        background-color: $color2;
+        border: $color1 $size solid ;
+        display: inline-block
     }
     
     p{

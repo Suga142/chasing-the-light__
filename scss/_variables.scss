@@ -23,17 +23,21 @@ $fav-colors: (
     }
 }
 
-// mixins para uso general
+// mixins para tamaños
 
 @mixin size ($alto,$ancho) {
     height: $alto;
     width: $ancho;
 }
 
+// mixin para paddings
+
 @mixin padding ($pt,$pb){
     padding-top: $pt;
     padding-bottom: $pb;
 }
+
+// mixin para margins
 
 @mixin margin ($mt,$mb){
     margin-top: $mt;

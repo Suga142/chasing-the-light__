@@ -8484,6 +8484,10 @@ main {
         width: 8vw; }
       main .centro .img1 {
         display: inline-block; } }
+  main .desc {
+    background-color: #102f38;
+    border: #9bcede 3px solid;
+    display: inline-block; }
   main p {
     font-size: 18px;
     color: #9bcede;
