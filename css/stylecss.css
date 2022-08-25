@@ -8487,13 +8487,20 @@ main {
   main .desc {
     background-color: #102f38;
     border: #9bcede 3px solid;
-    display: inline-block; }
+    display: flex;
+    align-content: center;
+    max-width: 1000px;
+    justify-content: center;
+    margin: auto; }
   main p {
     font-size: 18px;
     color: #9bcede;
     text-align: center;
     margin-left: 15px;
     margin-right: 15px; }
+  main .ini {
+    margin-top: 30px;
+    margin-bottom: 12px; }
 
 .formulario1 {
   text-align: center;

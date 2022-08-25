@@ -96,7 +96,11 @@ main{
     .desc{
         background-color: $color2;
         border: $color1 $size solid ;
-        display: inline-block
+        display: flex;
+        align-content: center;
+        max-width: 1000px;
+        justify-content: center;
+        margin: auto;
     }
     
     p{
@@ -108,6 +112,8 @@ main{
         
     }
 
-    
+    .ini{
+       @include margin ($size*10 ,$size*4)
+    }
 }    
     
